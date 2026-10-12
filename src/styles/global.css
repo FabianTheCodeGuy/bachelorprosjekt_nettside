@@ -38,7 +38,7 @@ a:hover {
     z-index: 10;
     pointer-events: none;
     transform: rotate(-14deg);
-     animation: trykk-wobble 3s ease-in-out infinite;
+     animation: trykk-wobble 1.0s steps(1, end) infinite;
 }
 
 @media (max-width: 1199px) {

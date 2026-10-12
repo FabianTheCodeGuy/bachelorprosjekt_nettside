@@ -14,9 +14,31 @@ const SkillSection = () => {
             </p>
 
             <p>
-              Ta kontakt for en uforpliktende prat. Passer prosjektet, sender
-              Kristiania en kontrakt som begge parter signerer. Vi starter i
-              januar, så jo før vi kommer i gang, jo bedre.
+              <strong>Vi har erfaring med blant annet:</strong>
+            </p>
+
+            <ul>
+              <li>
+                <strong>Språk:</strong> C, C#, Java, Swift og TypeScript
+              </li>
+              <li>
+                <strong>Rammeverk:</strong> .NET, Spring Boot, React, Jetpack
+                Compose og Tailwind CSS
+              </li>
+              <li>
+                <strong>Data og meldingskøer:</strong> MySQL, Kafka og RabbitMQ
+              </li>
+              <li>
+                <strong>Sky og DevOps:</strong> AWS, Docker og GitHub
+              </li>
+              <li>
+                <strong>Design:</strong> Figma
+              </li>
+            </ul>
+
+            <p>
+              Er dere usikre på om prosjektet passer? Ta kontakt for en
+              uforpliktende prat.
             </p>
 
             <h3>
