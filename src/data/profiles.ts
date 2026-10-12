@@ -20,11 +20,10 @@ export const profiles: Profile[] = [
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
   },
   {
-    fullName: "Kristoffer Fernholt",
+    fullName: "Kristoffer Bratterud Fernholt",
     name: "Kristoffer",
     age: "25",
-    description:
-      "Kristoffer er en backend-glad utvikler som liker å forstå hvordan ting fungerer under panseret. Han trives best med Java, Spring Boot og databaser, men tar gjerne turen innom frontend også for å se helheten. Han har jobbet mye med Docker, er i gang med AWS, og bruker Python til å grave i sine egne treningsdata. Som studentassistent har han fått mye trening i å lese andres kode og forklare ting enkelt, og mange år på Jernia har gjort ham god på folk. Han har også vært grensejeger i Sør-Varanger, så litt press er han vant til.",
+    description: "Kristoffer studerer programmering og liker seg best i backend, særlig med Java, Spring Boot og databaser. Han har erfaring med fullstack-utvikling og jobber nå i et gruppeprosjekt med mikrotjenester, der teamet også bruker Python og RabbitMQ. Han har brukt mye Docker og er i gang med å lære Kubernetes og AWS. Som studentassistent har han veiledet andre i programmering og databaser, og er vant til å sette seg inn i andres kode og forklare løsninger. Ved siden av studiene har han jobbet flere år på Jernia, hvor han har fått mye erfaring med kundebehandling og rådgivning.",
     image: "/images/kristoffer.jpg",
     study: "Informasjonsteknologi - Programmering",
   },
