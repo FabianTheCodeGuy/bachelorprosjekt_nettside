@@ -7,7 +7,7 @@ export const profiles: Profile[] = [
     age: "32",
     description:
       "Kenneth er en nysgjerrig fyr som liker å finne ut hvordan ting henger sammen. Han har fagbrev i IT, men brukte mange år på å designe og bygge snowparker rundt om i Norge, og har til og med drevet sitt eget firma. Nå har han kastet seg over koding og liker å jobbe med både frontend og backend. For tiden bygger han sin egen nettside med en scraper som henter innhold fra andre nettsider og gjør det om til JSON, så han kan bruke dataene til sine egne prosjekter. Han er også glad i å teste ut KI-verktøy, og trives best når han får bryne seg på et konkret problem.",
-    image: "/images/kenneth.jpg",
+    image: "/images/Kenneth.jpg",
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
   },
   {
@@ -16,7 +16,7 @@ export const profiles: Profile[] = [
     age: "27",
     description:
       "Fabian er en kreativ og energisk fyr med fagutdanning i grafisk design, og et godt øye for typografi, komposisjon og visuell helhet. Etter hvert ble han nysgjerrig på hvordan ting faktisk bygges, og nå driver han med utvikling for web og mobil. Han liker både frontend og backend, fra å forme brukergrensesnittet til å få logikken og dataene bak til å fungere. Målet hans er løsninger som ser bra ut og er enkle å bruke.",
-    image: "/images/fabian.jpg",
+    image: "/images/Fabian.jpg",
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
   },
   {
