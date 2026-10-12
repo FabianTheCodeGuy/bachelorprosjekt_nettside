@@ -61,7 +61,6 @@ const ProfileCard = ({ profile, isOpen, onClick }: ProfileCardProps) => {
             </h3>
             <h4 className={styles.study}>{profile.study}</h4>
             <p className={styles.description}>{profile.description}</p>
-            {/*TODO skal vi ha dette som egne bokser eller inne her?*/}
             <div className={styles.links}>
               {profile.linkedin && (
                   <a
@@ -83,6 +82,17 @@ const ProfileCard = ({ profile, isOpen, onClick }: ProfileCardProps) => {
                       onClick={(e) => e.stopPropagation()}
                   >
                     <img src="/icons/github.svg" alt="" /> <span className={styles.linkText}>GitHub</span>
+                  </a>
+              )}
+              {profile.cv && (
+                  <a
+                      className={styles.linkBtn}
+                      href={profile.cv}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                  >
+                    <span className={styles.linkText}>Se min CV her!</span>
                   </a>
               )}
             </div>
