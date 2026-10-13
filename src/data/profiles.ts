@@ -10,7 +10,8 @@ export const profiles: Profile[] = [
     image: "/images/kenneth.jpg",
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
     linkedin: "https://www.linkedin.com/in/kennethnygard/",
-    github: "https://github.com/kelsolini"
+    github: "https://github.com/kelsolini",
+    cv: "public/cv/CV_Kenneth_Nygard.pdf"
   },
   {
     fullName: "Fabian Christopher Birkedal",
@@ -21,7 +22,8 @@ export const profiles: Profile[] = [
     image: "/images/fabian.jpg",
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
     linkedin: "https://www.linkedin.com/in/fabian-birkedal-78510633b/",
-    github: "https://github.com/FabianTheCodeGuy"
+    github: "https://github.com/FabianTheCodeGuy",
+    cv: "public/cv/CV_Fabian_Birkedal.pdf"
   },
   {
     fullName: "Kristoffer Bratterud Fernholt",
@@ -31,6 +33,7 @@ export const profiles: Profile[] = [
     image: "/images/kristoffer.jpg",
     study: "Informasjonsteknologi - Programmering",
     linkedin: "https://www.linkedin.com/in/kristoffer-fernholt-21a0a5336/",
-    github: "https://github.com/kriss917"
+    github: "https://github.com/kriss917",
+    cv: "public/cv/CV_Kristoffer_Fernholt_kort.pdf"
   },
 ];

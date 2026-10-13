@@ -7,6 +7,7 @@ export interface Profile {
   study: string;
   linkedin?: string; //TODO fjerne optional når alt er testa
   github?: string;
+  cv?: string;
 
   //TODO: hva mer?
 }
