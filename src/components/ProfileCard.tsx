@@ -61,6 +61,43 @@ const ProfileCard = ({ profile, isOpen, onClick }: ProfileCardProps) => {
             </h3>
             <h4 className={styles.study}>{profile.study}</h4>
             <p className={styles.description}>{profile.description}</p>
+            <div className={styles.links}>
+              {profile.linkedin && (
+                <a
+                  className={styles.linkBtn}
+                  href={profile.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <img src="/icons/linkedin.png" alt="" />{" "}
+                  <span className={styles.linkText}>LinkedIn</span>
+                </a>
+              )}
+              {profile.github && (
+                <a
+                  className={styles.linkBtn}
+                  href={profile.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <img src="/icons/github.svg" alt="" />{" "}
+                  <span className={styles.linkText}>GitHub</span>
+                </a>
+              )}
+              {profile.cv && (
+                <a
+                  className={styles.linkBtn}
+                  href={profile.cv}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <span className={styles.linkText}>Se min CV her!</span>
+                </a>
+              )}
+            </div>
           </div>
         )}
       </div>

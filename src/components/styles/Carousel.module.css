@@ -1,231 +1,219 @@
 @keyframes slide {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(calc(-50% - 12.5px));
-    }
+  to {
+    transform: translateX(calc(-50% - 12.5px));
+  }
 }
 .section {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--space-md) 0 0 0 ;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md) 0 0 0;
 }
 
 .text {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-md);
-    font-weight: 70;
-    margin-bottom: var(--space-lg);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-md);
+  font-weight: 70;
+  margin-bottom: var(--space-lg);
 }
 
 .title {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-lg);
-    font-weight: 700;
-    line-height: 1.2;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .Skill {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .SkillName {
-    position: absolute;
-    top: calc(100% + 10px);
-    padding: 5px 10px;
-    background-color: var(--color-accent);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    font-family: var(--font-heading);
-    font-size: var(--font-size-md);
-    font-weight: 700;
-    line-height: 1.2;
-    white-space: nowrap;
+  position: absolute;
+  top: calc(100% + 10px);
+  padding: 5px 10px;
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
 
-    opacity: 0;
-    visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
 
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 
-    transition:
-        opacity 0.2s ease,
-        transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 
-    z-index: 3;
+  z-index: 3;
 }
 
 .Skill:hover .SkillName {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .CarouselWrapper {
-    padding: 4% 0;
-    width: 100%;
-    overflow: hidden;
+  padding: 4% 0;
+  width: 100%;
+  overflow: hidden;
 
-    background-color: var(--color-accent-2);
+  background-color: var(--color-accent-2);
 
-    border: 2px solid var(--color-border);
+  border: 2px solid var(--color-border);
 
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
 
-    position: relative;
+  position: relative;
 }
 
 .CarouselWrapper::before,
 .CarouselWrapper::after {
-    position: absolute;
-    top: 0;
+  position: absolute;
+  top: 0;
 
-    width: 100px;
-    height: 100%;
+  width: 100px;
+  height: 100%;
 
-    content: "";
-    z-index: 2;
-    pointer-events: none;
+  content: "";
+  z-index: 2;
+  pointer-events: none;
 }
 
 .CarouselWrapper::before {
-    left: 0;
-    background: linear-gradient(
-        to left,
-        transparent,
-        var(--color-accent-2)
-    );
+  left: 0;
+  background: linear-gradient(to left, transparent, var(--color-accent-2));
 }
 
 .CarouselWrapper::after {
-    right: 0;
-    background: linear-gradient(
-        to right,
-        transparent,
-        var(--color-accent-2)
-    );
+  right: 0;
+  background: linear-gradient(to right, transparent, var(--color-accent-2));
 }
 
 .Carousel {
-    display: flex;
-    width: max-content;
-    gap: 25px;
-    align-items: center;
+  display: flex;
+  width: max-content;
+  gap: 25px;
+  align-items: center;
 
-    animation: slide 35s infinite linear;
+  animation: slide 35s infinite linear;
 }
 
 .Skill {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 @media (width >= 768px) {
-    .Skill:hover .SkillName {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
+  .Skill:hover .SkillName {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 @media (width < 768px) {
-    .SkillName {
-        display: none;
-    }
+  .SkillName {
+    display: none;
+  }
 }
 
 .CarouselWrapper:hover .Carousel {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .Logo {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
-
 
 /* Tablet */
 
 @media (width >= 768px) {
-    .Carousel {
-        gap: 30px;
-    }
+  .Carousel {
+    gap: 30px;
+  }
 
-    .Logo {
-        width: 60px;
-        height: 60px;
-    }
+  .Logo {
+    width: 60px;
+    height: 60px;
+  }
 
-    .CarouselWrapper::before,
-    .CarouselWrapper::after {
-        width: 140px;
-    }
+  .CarouselWrapper::before,
+  .CarouselWrapper::after {
+    width: 140px;
+  }
 }
-
 
 /* Desktop */
 
 @media (width >= 992px) {
-    .Carousel {
-        gap: 35px;
-    }
+  .Carousel {
+    gap: 35px;
+  }
 
-    .Logo {
-        width: 70px;
-        height: 70px;
-    }
+  .Logo {
+    width: 70px;
+    height: 70px;
+  }
 
-    .CarouselWrapper::before,
-    .CarouselWrapper::after {
-        width: 180px;
-    }
+  .CarouselWrapper::before,
+  .CarouselWrapper::after {
+    width: 180px;
+  }
 }
-
 
 /* Large desktop */
 
 @media (width >= 1200px) {
-    .Carousel {
-        gap: 40px;
-    }
+  .Carousel {
+    gap: 40px;
+  }
 
-    .Logo {
-        width: 80px;
-        height: 80px;
-    }
+  .Logo {
+    width: 80px;
+    height: 80px;
+  }
 
-    .CarouselWrapper::before,
-    .CarouselWrapper::after {
-        width: 220px;
-    }
+  .CarouselWrapper::before,
+  .CarouselWrapper::after {
+    width: 220px;
+  }
 }
-
 
 /* Extra large */
 
 @media (width >= 1440px) {
-    .Carousel {
-        gap: 45px;
-    }
+  .Carousel {
+    gap: 45px;
+  }
 
-    .Logo {
-        width: 90px;
-        height: 90px;
-    }
+  .Logo {
+    width: 90px;
+    height: 90px;
+  }
 
-    .CarouselWrapper::before,
-    .CarouselWrapper::after {
-        width: 250px;
-    }
+  .CarouselWrapper::before,
+  .CarouselWrapper::after {
+    width: 250px;
+  }
 }
