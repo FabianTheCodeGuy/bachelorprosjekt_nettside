@@ -11,7 +11,7 @@ export const profiles: Profile[] = [
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
     linkedin: "https://www.linkedin.com/in/kennethnygard/",
     github: "https://github.com/kelsolini",
-    cv: "public/cv/CV_Kenneth_Nygard.pdf"
+    cv: "/cv/CV_Kenneth_Nygard.pdf",
   },
   {
     fullName: "Fabian Christopher Birkedal",
@@ -23,17 +23,18 @@ export const profiles: Profile[] = [
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
     linkedin: "https://www.linkedin.com/in/fabian-birkedal-78510633b/",
     github: "https://github.com/FabianTheCodeGuy",
-    cv: "public/cv/CV_Fabian_Birkedal.pdf"
+    cv: "/cv/CV_Fabian_Birkedal.pdf",
   },
   {
     fullName: "Kristoffer Bratterud Fernholt",
     name: "Kristoffer",
     age: "25",
-    description: "Kristoffer studerer programmering og liker seg best i backend, særlig med Java, Spring Boot og databaser. Han har erfaring med fullstack-utvikling og jobber nå i et gruppeprosjekt med mikrotjenester, der teamet også bruker Python og RabbitMQ. Han har brukt mye Docker og er i gang med å lære Kubernetes og AWS. Som studentassistent har han veiledet andre i programmering og databaser, og er vant til å sette seg inn i andres kode og forklare løsninger. Ved siden av studiene har han jobbet flere år på Jernia, hvor han har fått mye erfaring med kundebehandling og rådgivning.",
+    description:
+      "Kristoffer studerer programmering og liker seg best i backend, særlig med Java, Spring Boot og databaser. Han har erfaring med fullstack-utvikling og jobber nå i et gruppeprosjekt med mikrotjenester, der teamet også bruker Python og RabbitMQ. Han har brukt mye Docker og er i gang med å lære Kubernetes og AWS. Som studentassistent har han veiledet andre i programmering og databaser, og er vant til å sette seg inn i andres kode og forklare løsninger. Ved siden av studiene har han jobbet flere år på Jernia, hvor han har fått mye erfaring med kundebehandling og rådgivning.",
     image: "/images/kristoffer.jpg",
     study: "Informasjonsteknologi - Programmering",
     linkedin: "https://www.linkedin.com/in/kristoffer-fernholt-21a0a5336/",
     github: "https://github.com/kriss917",
-    cv: "public/cv/CV_Kristoffer_Fernholt_kort.pdf"
+    cv: "/cv/CV_Kristoffer_Fernholt_kort.pdf",
   },
 ];

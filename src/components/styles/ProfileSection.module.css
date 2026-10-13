@@ -1,24 +1,24 @@
 .section {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--space-md) 0 0 0;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md) 0 0 0;
 }
 
 .text {
-    font-family: var(--font-heading);
-    font-size: var(--font-size-xl);
-    font-weight: 700;
-    margin-bottom: var(--space-lg);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
 }
 
 @media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }

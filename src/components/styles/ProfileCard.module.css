@@ -1,199 +1,192 @@
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    padding: var(--space-lg);
-    background: var(--color-accent);
-    border: var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    cursor: pointer;
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-accent);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .card:hover {
-   /* transform: translate(-2px, -2px);*/
-    box-shadow: 8px 8px 0 var(--color-border);
-    background: var(--color-accent-2);
+  /* transform: translate(-2px, -2px);*/
+  box-shadow: 8px 8px 0 var(--color-border);
+  background: var(--color-accent-2);
 }
-
 
 /* Trykk meg */
 
 .clickHint {
-    position: fixed;
-    padding: 5px 10px;
-    background-color: var(--color-accent);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    font-family: var(--font-heading);
-    font-size: var(--font-size-md);
-    font-weight: 700;
-    line-height: 1.2;
-    white-space: nowrap;
-    pointer-events: none;
-    z-index: 9999;
+  position: fixed;
+  padding: 5px 10px;
+  background-color: var(--color-accent);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 9999;
 }
 
 @media (hover: none), (pointer: coarse) {
-    .clickHint {
-        display: none;
-    }
+  .clickHint {
+    display: none;
+  }
 }
 
 /* Åpent kort */
 
 .open {
-    grid-column: 1 / -1;
-    flex-direction: row;
-    align-items: flex-start;
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .open .clickHint {
-    display: none;
+  display: none;
 }
 
 .open .content {
-    flex: 1;
+  flex: 1;
 }
-
 
 /* Bilde */
 
 .image {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border: var(--border);
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: var(--border);
 }
 
 .open .image {
-    width: 30%;
-    flex-shrink: 0;
+  width: 30%;
+  flex-shrink: 0;
 }
-
 
 /* Innhold */
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
-
 
 /* Navn */
 
 .name {
-    margin: 0;
-    font-family: var(--font-heading);
-    font-size: var(--font-size-lg);
-    font-weight: 1000;
-    line-height: 1.2;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  font-weight: 1000;
+  line-height: 1.2;
 }
-
 
 /* Beskrivelse */
 
 .description {
-    margin: 0;
-    font-size: var(--font-size-md);
-    color: var(--color-text-muted);
-    border-top: var(--border);
+  margin: 0;
+  font-size: var(--font-size-md);
+  color: var(--color-text-muted);
+  border-top: var(--border);
 }
-
 
 /* Studieretning */
 
 .study {
-    margin: 0;
-    font-family: var(--font-heading);
-    font-weight: 600;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
 }
-
 
 /* Mer informasjon */
 
 .moreInfo {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-    margin-top: var(--space-md);
-    padding-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
 }
 
 /* Lenker */
 
 .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-sm);
-    margin-top: var(--space-sm);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
 }
 
 .linkBtn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 2px 5px;
-    background: var(--color-bg, #fff);
-    border: var(--border);
-    border-radius: var(--radius);
-    box-shadow: 3px 3px 0 var(--color-border);
-    font-family: var(--font-heading);
-    font-size: 1rem;
-    font-weight: 700;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    transition:
-            transform 0.1s ease,
-            box-shadow 0.1s ease,
-            background 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 5px;
+  background: var(--color-bg, #fff);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: 3px 3px 0 var(--color-border);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    background 0.1s ease;
 }
 
 .linkText {
-    position: relative;
-    top: 2px;
+  position: relative;
+  top: 2px;
 }
 
 .linkBtn img {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .linkBtn:hover {
-    transform: translate(-1px, -1px);
-    box-shadow: 4px 4px 0 var(--color-border);
-    background: var(--color-accent-2);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--color-border);
+  background: var(--color-accent-2);
 }
 
 .linkBtn:active {
-    transform: translate(2px, 2px);
-    box-shadow: 0 0 0 var(--color-border);
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 0 var(--color-border);
 }
 
 .linkBtn:focus-visible {
-    outline: 3px solid var(--color-border);
-    outline-offset: 3px;
+  outline: 3px solid var(--color-border);
+  outline-offset: 3px;
 }
 .linkBtn:focus-visible {
-    outline: 3px solid var(--color-border);
-    outline-offset: 3px;
+  outline: 3px solid var(--color-border);
+  outline-offset: 3px;
 }
 
 @media (max-width: 767px) {
-    .open {
-        flex-direction: column;
-        align-items: stretch;
-    }
+  .open {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-    .open .image {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-    }
+  .open .image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
 }
