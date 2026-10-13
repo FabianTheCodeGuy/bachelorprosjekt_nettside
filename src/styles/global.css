@@ -1,69 +1,68 @@
 body {
-    font-family: var(--font-body);
-    font-size: var(--font-size-md);
-    line-height: 1.6;
-    background-color: var(--color-bg);
-    color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--font-size-md);
+  line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 h1 {
-    font-size: var(--font-size-xl);
+  font-size: var(--font-size-xl);
 }
 
 h2 {
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--space-lg);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-lg);
 }
 
 a:hover {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .section {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--space-xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
 }
 
 .home-content {
-    position: relative;
+  position: relative;
 }
 
 .trykk-image {
-    position: absolute;
-    width: 150px;
-    height: auto;
-    top: 220px;
-    left: -110px;
-    z-index: 10;
-    pointer-events: none;
-    transform: rotate(-14deg);
-     animation: trykk-wobble 1.0s steps(1, end) infinite;
+  position: absolute;
+  width: 150px;
+  height: auto;
+  top: 220px;
+  left: -110px;
+  z-index: 10;
+  pointer-events: none;
+  transform: rotate(-14deg);
+  animation: trykk-wobble 1s steps(1, end) infinite;
 }
 
 @media (max-width: 1199px) {
-    .trykk-image {
-        display: none;
-    }
+  .trykk-image {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-    .trykk-image {
-        display: none;
-    }
+  .trykk-image {
+    display: none;
+  }
 }
 
 @keyframes trykk-wobble {
-    0% {
-        transform: rotate(-8deg);
-    }
+  0% {
+    transform: rotate(-8deg);
+  }
 
-    50% {
-        transform: rotate(-3deg);
-    }
+  50% {
+    transform: rotate(-3deg);
+  }
 
-    100% {
-        transform: rotate(-8deg);
-    }
+  100% {
+    transform: rotate(-8deg);
+  }
 }
-

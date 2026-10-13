@@ -1,49 +1,49 @@
 .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
 
-    padding: var(--space-md) var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
 
-    background: var(--color-sidebar);
-    color: var(--color-text);
+  background: var(--color-sidebar);
+  color: var(--color-text);
 
-    font-family: var(--font-heading);
-    font-size: var(--font-size-md);
-    font-weight: 700;
-    line-height: 1.2;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  line-height: 1.2;
 
-    border: var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        transform 0.15s ease,
-        box-shadow 0.15s ease,
-        background-color 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
 }
 
 .button:hover {
-    box-shadow: 8px 8px 0 var(--color-border);
-    background: var(--color-accent-2);
+  box-shadow: 8px 8px 0 var(--color-border);
+  background: var(--color-accent-2);
 }
 
 .button:active {
-    transform: translate(0, 0);
-    box-shadow: none;
+  transform: translate(0, 0);
+  box-shadow: none;
 }
 
 .button:focus-visible {
-    outline: 2px solid var(--color-border);
-    outline-offset: 4px;
+  outline: 2px solid var(--color-border);
+  outline-offset: 4px;
 }
 
 .button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    transform: none;
-    box-shadow: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }

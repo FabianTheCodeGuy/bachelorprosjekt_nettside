@@ -1,12 +1,12 @@
 .footer {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--space-lg) var(--space-md);
-    border-top: var(--border);
-    font-family: var(--font-heading);
-    text-align: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  border-top: var(--border);
+  font-family: var(--font-heading);
+  text-align: center;
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
