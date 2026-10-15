@@ -6,7 +6,7 @@ export const profiles: Profile[] = [
     name: "Kenneth",
     age: "32",
     description:
-      "Kenneth er en nysgjerrig fyr som liker å finne ut hvordan ting henger sammen. Han har fagbrev i IT, men brukte mange år på å designe og bygge snowparker rundt om i Norge, og har til og med drevet sitt eget firma. Nå har han kastet seg over koding og liker å jobbe med både frontend og backend. For tiden bygger han sin egen nettside med en scraper som henter innhold fra andre nettsider og gjør det om til JSON, så han kan bruke dataene til sine egne prosjekter. Han er også glad i å teste ut KI-verktøy, og trives best når han får bryne seg på et konkret problem.",
+      "Problemløser Flåklypa entusiast Gladgutt fra Lillehammer, med interesse for klatring, snowboard, og friluftsliv Ved siden av studiene har han alltid et eller annet sideprosjekt, eller idé. Noe som er verdt å trekke frem, er den digitale kokeboka hvor han og samboeren bruker for å løse to av livets store spørsmål: Hva skal vi ha til middag, og hvor i all verden fant vi den oppskriften? Kan litt om alt, og googler resten.",
     image: "/images/kenneth.jpg",
     study: "Informasjonsteknologi - Frontend- og mobilutvikling",
     linkedin: "https://www.linkedin.com/in/kennethnygard/",
